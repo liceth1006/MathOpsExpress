@@ -60,12 +60,15 @@ export function SumaPrimerosNumeros() {
   $SumaNumeros.addEventListener("click", (e) => {
     const numero1 = parseFloat($numero1.value);
     const numero2 = parseFloat($numero2.value);
-    const resultado = (numero2 * (numero2 + 1)) / 2 - (numero1 * (numero1 - 1)) / 2;
-  if ($numero1.value === "" && $numero2.value === "") $resultados.textContent = `Por favor, ingrese un número`;
-    if (numero1 <= 0 || numero2 <= 0) $resultados.textContent = `Por favor, ingrese un númer mayor a cero`;
-    else if (numero1 >= numero2) $resultados.textContent = `Por favor, numero 2 debe ser mayor que numero 1`;
-
-     else {
+    const resultado =
+      (numero2 * (numero2 + 1)) / 2 - (numero1 * (numero1 - 1)) / 2;
+    if ($numero1.value === "" && $numero2.value === "")
+      $resultados.textContent = `Por favor, ingrese un número`;
+    else if (numero1 <= 0 || numero2 <= 0)
+      $resultados.textContent = `Por favor, ingrese un númer mayor a cero`;
+    else if (numero1 >= numero2)
+      $resultados.textContent = `Por favor, numero 2 debe ser mayor que numero 1`;
+    else {
       $resultados.textContent = `la suma de los primeros n números es " ${resultado}`;
     }
   });
