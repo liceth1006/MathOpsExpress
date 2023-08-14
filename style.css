@@ -15,11 +15,13 @@ body {
 h1 {
   margin: 15px;
   font-size: 3.5rem;
+  color: #395c0e;
 }
 
 h2 {
   margin: 0;
   font-size: 2rem;
+  color: #162502;
 }
 
 p {
