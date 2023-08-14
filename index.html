@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <h1>MathOps Express</h1>
+        <h2>Tu Destino para Operaciones Matemáticas</h2>
+        <p>
+          Diseñada específicamente para realizar únicamente las cuatro
+          operaciones matemáticas básicas entre dos números: sumar, restar,
+          multiplicar y dividir. Nuestro enfoque se basa en la simplicidad y la
+          eficiencia, permitiéndote realizar estas operaciones esenciales de
+          manera rápida y precisa.
+        </p>
+        <div class="calculator">
+          <label for="">Numero1</label>
+          <input type="number" id="numero1" />
+          <label for="">Numero2</label>
+          <input type="number" id="numero2" />
+          </div>
+          <div class="section--button">
+            <button class="button" id="suma">Suma</button>
+            <button class="button" id="resta">Resta</button>
+            <button class="button" id="multiplicacion">Multiplicación</button>
+            <button class="button" id="division">División</button>
+          </div>
+          <div class="result">
+            <h2>Resultado</h2>
+            <h2 id="resultado"></h2>
+          </div>
+      </section>
+    </main>
+    <script src="./scripts/index.js" type="module"></script>
+  </body>
+</html>
